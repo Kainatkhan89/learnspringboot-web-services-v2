@@ -7,12 +7,16 @@ import com.kainat.learnspringbootwebservices.api.persistence.entities.CourseModu
 import com.kainat.learnspringbootwebservices.api.enums.Color;
 import com.kainat.learnspringbootwebservices.api.enums.Icon;
 import org.hibernate.Hibernate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class CourseModuleMapper {
     private final TutorialMapper tutorialMapper;
 
+   @Autowired
     public CourseModuleMapper(TutorialMapper tutorialMapper) {
         this.tutorialMapper = tutorialMapper;
     }
