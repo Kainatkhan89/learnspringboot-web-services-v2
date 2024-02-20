@@ -3,7 +3,7 @@ package com.kainat.learnspringbootwebservices.api.mappers;
 import com.kainat.learnspringbootwebservices.api.dtos.CourseModuleDTO;
 import com.kainat.learnspringbootwebservices.api.dtos.CourseModulesDTO;
 import com.kainat.learnspringbootwebservices.api.dtos.TutorialDTO;
-import com.kainat.learnspringbootwebservices.api.persistence.entities.CourseModule;
+import com.kainat.learnspringbootwebservices.persistence.entities.CourseModule;
 import com.kainat.learnspringbootwebservices.api.enums.Color;
 import com.kainat.learnspringbootwebservices.api.enums.Icon;
 import org.hibernate.Hibernate;

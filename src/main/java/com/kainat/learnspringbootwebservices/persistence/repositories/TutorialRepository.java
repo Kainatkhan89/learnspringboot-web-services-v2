@@ -1,6 +1,6 @@
-package com.kainat.learnspringbootwebservices.api.persistence.repositories;
+package com.kainat.learnspringbootwebservices.persistence.repositories;
 
-import com.kainat.learnspringbootwebservices.api.persistence.entities.Tutorial;
+import com.kainat.learnspringbootwebservices.persistence.entities.Tutorial;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

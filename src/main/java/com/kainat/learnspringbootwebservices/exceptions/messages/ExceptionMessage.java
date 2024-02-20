@@ -1,4 +1,4 @@
-package com.kainat.learnspringbootwebservices.api.exceptions.messages;
+package com.kainat.learnspringbootwebservices.exceptions.messages;
 
 public class ExceptionMessage {
     public final static String RESOURCE_ALREADY_EXISTS_ERROR = "Resource already exists";

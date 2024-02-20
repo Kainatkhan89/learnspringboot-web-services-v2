@@ -1,4 +1,4 @@
-package com.kainat.learnspringbootwebservices.api.persistence.entities;
+package com.kainat.learnspringbootwebservices.persistence.entities;
 
 import jakarta.persistence.*;
 

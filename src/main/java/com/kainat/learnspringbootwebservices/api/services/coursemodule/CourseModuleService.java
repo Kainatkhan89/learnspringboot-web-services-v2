@@ -2,12 +2,12 @@ package com.kainat.learnspringbootwebservices.api.services.coursemodule;
 
 import com.kainat.learnspringbootwebservices.api.dtos.CourseModuleDTO;
 import com.kainat.learnspringbootwebservices.api.dtos.CourseModulesDTO;
-import com.kainat.learnspringbootwebservices.api.exceptions.custom.DuplicateResourceException;
-import com.kainat.learnspringbootwebservices.api.exceptions.custom.ResourceNotFoundException;
-import com.kainat.learnspringbootwebservices.api.exceptions.messages.ExceptionMessage;
+import com.kainat.learnspringbootwebservices.exceptions.custom.DuplicateResourceException;
+import com.kainat.learnspringbootwebservices.exceptions.custom.ResourceNotFoundException;
+import com.kainat.learnspringbootwebservices.exceptions.messages.ExceptionMessage;
 import com.kainat.learnspringbootwebservices.api.mappers.CourseModuleMapper;
-import com.kainat.learnspringbootwebservices.api.persistence.entities.CourseModule;
-import com.kainat.learnspringbootwebservices.api.persistence.repositories.CourseModuleRepository;
+import com.kainat.learnspringbootwebservices.persistence.entities.CourseModule;
+import com.kainat.learnspringbootwebservices.persistence.repositories.CourseModuleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

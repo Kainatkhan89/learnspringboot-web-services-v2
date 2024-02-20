@@ -1,4 +1,4 @@
-package com.kainat.learnspringbootwebservices.api.exceptions.custom;
+package com.kainat.learnspringbootwebservices.exceptions.custom;
 
 public class DuplicateResourceException extends RuntimeException{
     public DuplicateResourceException(String message){

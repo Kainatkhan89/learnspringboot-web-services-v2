@@ -1,8 +1,8 @@
-package com.kainat.learnspringbootwebservices.api.exceptions.handlers;
+package com.kainat.learnspringbootwebservices.exceptions.handlers;
 
-import com.kainat.learnspringbootwebservices.api.exceptions.custom.DuplicateResourceException;
-import com.kainat.learnspringbootwebservices.api.exceptions.custom.ResourceNotFoundException;
-import com.kainat.learnspringbootwebservices.api.exceptions.messages.ExceptionMessage;
+import com.kainat.learnspringbootwebservices.exceptions.custom.DuplicateResourceException;
+import com.kainat.learnspringbootwebservices.exceptions.custom.ResourceNotFoundException;
+import com.kainat.learnspringbootwebservices.exceptions.messages.ExceptionMessage;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-@ControllerAdvice()
+@ControllerAdvice(basePackages = "com.kainat.learnspringbootwebservices.api")
 public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(ResourceNotFoundException.class)

@@ -1,11 +1,11 @@
 package com.kainat.learnspringbootwebservices.api.mappers;
 
 import com.kainat.learnspringbootwebservices.api.dtos.TutorialDTO;
-import com.kainat.learnspringbootwebservices.api.exceptions.custom.ResourceNotFoundException;
-import com.kainat.learnspringbootwebservices.api.exceptions.messages.ExceptionMessage;
-import com.kainat.learnspringbootwebservices.api.persistence.entities.CourseModule;
-import com.kainat.learnspringbootwebservices.api.persistence.entities.Tutorial;
-import com.kainat.learnspringbootwebservices.api.persistence.repositories.CourseModuleRepository;
+import com.kainat.learnspringbootwebservices.exceptions.custom.ResourceNotFoundException;
+import com.kainat.learnspringbootwebservices.exceptions.messages.ExceptionMessage;
+import com.kainat.learnspringbootwebservices.persistence.entities.CourseModule;
+import com.kainat.learnspringbootwebservices.persistence.entities.Tutorial;
+import com.kainat.learnspringbootwebservices.persistence.repositories.CourseModuleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
