@@ -9,6 +9,10 @@ import com.kainat.learnspringbootwebservices.persistence.repositories.CourseModu
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
+import static java.util.stream.Collectors.toList;
+
 @Component
 public class TutorialMapper {
     private final CourseModuleRepository courseModuleRepository;
@@ -48,5 +52,13 @@ public class TutorialMapper {
         tutorialDTO.setFinishedCodeUrl(tutorial.getFinishedCodeUrl());
 
         return tutorialDTO;
+    }
+
+    public List<Tutorial> toTutorials(List<TutorialDTO> tutorialDTOs) {
+        return tutorialDTOs.stream().map(this::toTutorial).collect(toList());
+    }
+
+    public List<TutorialDTO> toTutorialDTOs(List<Tutorial> tutorials) {
+        return tutorials.stream().map(this::toTutorialDTO).collect(toList());
     }
 }
